@@ -70,16 +70,17 @@ public class GameBoard implements Drawable, Updateable {
 			//Get location
 			//Check if it valid, if so then move
 				//Pile getLocationX() and getLocationY();
-				//Pile checkMove(selectedCard); --> if true then Card move();
+				//Pile checkMove(selectedCard); --> if true then Pile move(Card C, Pile p);
 			//if checkMove(selectedCard) is false then go to step 1;
 				//Instance --> firstClick == false;
 
 		//Methods:
-			//Card getLocationX(), getLocationY();
-				//move(Pile p) --> moves a Card to a Pile;
+			//Card getLocationX(), getLocationY(), newLocationX(), newLocationY();
+				//setFacing(boolean facing) --> changes the facing of the card according to the boolean value of "facing";
 				//faceUp(); --> returns whether the card is face up or face down;
 			//Pile getLocationX(), getLocationY(),
 				//checkMove(Card c); --> checks if the selectedCard can move to "this" Pile;
+				//move(Card C, Pile p); --> moves Card C from Pile p to this Pile, and changes the location of the Card;
 			//DrawPile draw(); --> returns an ArrayList of the top three cards
 			//ThreeCardPile addThreeCards(ArrayList<Cards>);
 
