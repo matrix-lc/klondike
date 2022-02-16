@@ -54,7 +54,34 @@ public class GameBoard implements Drawable, Updateable {
 	public void justClicked(MouseEvent me) {
 		Point p = me.getPoint();
 		System.out.println("You just clicked "+p);
+		
+		//Step 1: Check if the player selected a card
+			//Get location
+			//Check Pile Locations
+				//If DrawPile getLocationX() and getLocationY() --> DrawPile draw();
+					//ThreeCardPile --> addThreeCards(draw());
+				//else if ColumnPile and ThreeCardPile getLocationX() and getLocationY();
+					//Check what Card is selected: ColumnPile --> Card getLocationY() to check the card and for ThreeCardPile -- Card getLocationX() to check the card
+						//Card faceUp() --> if true then faceUp if false then faceDown;
+					//Save Card
+					//Instance --> Card selectedCard;
+					//Instance --> firstClick == true;
+		//Second Click if(firstClick == true)
+			//Get location
+			//Check if it valid, if so then move
+				//Pile getLocationX() and getLocationY();
+				//Pile checkMove(selectedCard); --> if true then Card move();
+			//if checkMove(selectedCard) is false then go to step 1;
+				//Instance --> firstClick == false;
 
+		//Methods:
+			//Card getLocationX(), getLocationY();
+				//move(Pile p) --> moves a Card to a Pile;
+				//faceUp(); --> returns whether the card is face up or face down;
+			//Pile getLocationX(), getLocationY(),
+				//checkMove(Card c); --> checks if the selectedCard can move to "this" Pile;
+			//DrawPile draw(); --> returns an ArrayList of the top three cards
+			//ThreeCardPile addThreeCards(ArrayList<Cards>);
 
 	}
 
