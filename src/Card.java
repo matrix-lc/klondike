@@ -66,7 +66,7 @@ public class Card implements Drawable, Updateable{
             s += value;
         }
         else{
-            s+= cardSuit.gets(value - 6);
+            s+= cardSuit.get(value - 6);
         }
         return s + "of" + cardSuit.get(suit);
     }
