@@ -3,6 +3,7 @@ import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.awt.Image;
+import java.awt.event.ActionEvent;
 import java.io.File;
 import java.io.IOException;
 import javax.imageio.ImageIO;
@@ -54,7 +55,7 @@ public class Card implements Drawable, Updateable{
 
 
 
-    public void moveTo(Loacation newLoc){
+    public void moveTo(Location newLoc){
         loc = newLoc;
 
     }
@@ -70,4 +71,15 @@ public class Card implements Drawable, Updateable{
         }
         return s + "of" + cardSuit.get(suit);
     }
-}
+
+    @Override
+    public void update(ActionEvent a) {
+        // TODO Auto-generated method stub
+        
+    }
+
+    @Override
+    public void draw(Graphics g) {
+        // TODO Auto-generated method stub
+        
+    }
