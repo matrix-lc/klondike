@@ -36,6 +36,15 @@ public class Card implements Drawable, Updateable{
         openImage();
     }
 
+    public int getValue(){
+        return value;
+    }
+
+    public int getSuit(){
+        return suit;
+    }
+
+    public boolean colorCompare(Card c){}
     public void openImage(){
         String st = "Klondike/images/cards/";
         if(!faceUp){
