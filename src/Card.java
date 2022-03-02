@@ -37,12 +37,12 @@ public class Card implements Drawable, Updateable{
     }
 
     public void openImage(){
-        String s = "Klondike/images/cards/";
+        String st = "Klondike/images/cards/";
         if(!faceUp){
-            s+="b1fv.png";
+            st+="b1fv.png";
         }
         else{
-            s += cardSuit.get(suit) + cardValue.get(value) + ".png";
+            st += cardSuit.get(suit) + cardValue.get(value) + ".png";
         }
     }
 		
@@ -83,3 +83,4 @@ public class Card implements Drawable, Updateable{
         // TODO Auto-generated method stub
         
     }
+}
