@@ -9,7 +9,7 @@ import java.awt.*;
  * You WILL write subclasses of Pile
  */
 public abstract class Pile implements Drawable, Updateable {
-    private ArrayList<Card> cards = new ArrayList<>();
+    protected ArrayList<Card> cards = new ArrayList<>();
 
     public abstract double getxLoc();
     public abstract double getyLoc();
