@@ -1,16 +1,16 @@
 public class Location {
-    private double x,y;
+    private int x,y;
 
-    public Location(double x, double y){
+    public Location(int x, int y){
         this.x = x;
         this.y = y;
     }
 
-    public double getXLoc(){
+    public int getXLoc(){
         return x;
     }
 
-    public double getYLoc(){
+    public int getYLoc(){
         return y;
     }
 }
