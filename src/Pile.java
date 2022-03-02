@@ -16,8 +16,6 @@ public abstract class Pile implements Drawable, Updateable {
 
     public abstract boolean canAddCard(Card c);
     
-    public abstract boolean removeTopCard();
-
     public void draw(Graphics g) {
         if (cards.size() == 0) {
             return;
